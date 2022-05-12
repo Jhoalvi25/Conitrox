@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background:#2874A6  ;
+    height: 48px;
+    width: 100%;
+    
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 14px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    
+    
+}
+
+
+
+
+nav a i{
+    margin-right: 1px;
+    padding: 14px;
+    
+}
+    
+
+
+
+
+nav a.active, a:hover{
+    background: #E67E22;
+    transition: .8s;
+
+}
+
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url(Imagenes_conitrox/ora.jpg) repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
+    
+}
+
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.linea{
+    background: #154360 ;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow:0 0 6px rgba(0, 0, 0, .5);
+
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+
+
+}
+
+.light-box img{
+    width: 70vw;
+    max-height: 100vh;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    background:#922B21;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+
+
+}
+
+.next{
+    display: block;
+    background: #922B21;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 5px;
+    
+
+
+}
+
+@media screen and (max-width:320px) {
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .close{
+        
+        top: 20px;
+        right: 400px;
+    }
+    
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color:#2874A6;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-shadow:black 0.1em 0.1em 0.2em;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #154360;
+    text-align: center;
+    transition: all 300ms ease;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #E67E22;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #154360;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px ){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+}
+
+/*scroll*/
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background: #154360;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #E67E22;
+    border-radius: 5px;
+}
+
+
+
