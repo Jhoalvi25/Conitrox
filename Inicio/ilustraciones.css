@@ -123,7 +123,7 @@ h1{
 }
 
 .light-box img{
-    width: 70vw;
+    width: 50vw;
     max-height: 100vh;
 }
 
@@ -134,8 +134,8 @@ h1{
 .close{
     display: block;
     position: absolute;
-    top: 20px;
-    right: 70px;
+    top: 40px;
+    right: 40px;
     background:#922B21;
     color: white;
     text-decoration: none;
@@ -152,10 +152,13 @@ h1{
     display: block;
     background: #922B21;
     color: white;
-    line-height: 40px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
     text-decoration: none;
     text-align: center;
-    padding: 5px 5px;
+    padding-top: 1px;
+    
     
 
 
@@ -169,7 +172,7 @@ h1{
     .close{
         
         top: 20px;
-        right: 400px;
+        right: 20px;
     }
     
 }
