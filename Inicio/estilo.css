@@ -5,10 +5,189 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+
+section h1{font-size: 3.5em;}
+
+section h2{font-size: 2.7em;}
+
+section h3{font-size: 2em;}
+ 
+section p{font-size: 1.2em;}
+
+button{
+     font-size: 1em;
+     font-weight: bold;
+     padding: 10px 20px;
+     border-radius: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     color: white;
+     background-color: #2471A3;
+
+
+}
+
+button:hover{
+     background-color: #E67E22;
+
+}
+ .container{
+     max-width: 1400px;
+     margin: auto;
+ }
+
+#hero{
+     padding-top: 225px;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     height: 90vh;
+     background-image: linear-gradient(
+         0deg, 
+         rgba(0, 0, 0, 0.5), 
+         rgba(0, 0, 0, 0.5) 
+     ) 
+     ,url("Imagenes_conitrox/36169-cumpleanos.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     
+     
+     
+
+}
+
+#hero h1{
+    
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#cumpleaños-pro-ya .container{
+     text-align: center;
+     padding: 200px 12px;
+}
+
+ 
+#mis-trabajos{
+     background-color: rgb(30, 30, 30);
+     color: white;
+     text-align: center;
+}
+
+#mis-trabajos .container{
+    padding: 150px 12px;
+     
+
+}
+
+#mis-trabajos h2{
+     margin-top: 0;
+     font-size: 3.2em;
+    
+}
+
+#mis-trabajos p{
+     display: none;
+}
+
+#mis-trabajos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) , url("Ilustraciones/ilustraciones_Conitrox/dos.jpg");
+    
+    
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) , url("Trabajos_tela/trabajos_tela_Conitrox/uno.jpg");
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) , url("Imagenes_conitrox/68401-instagram.jpg");
+
+}
+
+@media (min-width: 720px){
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #cumpleaños-pro-ya .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #cumpleaños-pro-ya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #cumpleaños-pro-ya h2{
+        margin-top: 0px;
+    }
+
+    #cumpleaños-pro-ya .img-container{
+        background-image: url("Imagenes_conitrox/36169-cumpleanos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+
+    }
+
+    #mis-trabajos .trabajos{
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+    #mis-trabajos p{
+        display: block;
+        margin-bottom: 30px;
+        text-shadow: black 0.1em 0.1em 0.2em;
+
+    }
+
+    #mis-trabajos h3{
+        margin-top: 0;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    #mis-trabajos .carta{
+        padding: 15px;
+    }
+
+
+}
+
+
 .logo{
     height: 100px;
     display: flex;
     margin-left: 10px;
+
+    
     
         
 }
@@ -121,12 +300,8 @@ li a.active, li a:hover{
     display: none;
 }
 
-section{
-    background: url(Imagenes_conitrox/1122615.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
+
+
 
 @media (max-width: 952px) {
     .enlace{
@@ -278,3 +453,5 @@ body::-webkit-scrollbar-thumb{
     background: #E67E22;
     border-radius: 5px;
 }
+
+
