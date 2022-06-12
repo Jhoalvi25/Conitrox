@@ -32,32 +32,40 @@ button:hover{
      background-color: #E67E22;
 
 }
- .container{
+
+.container{
      max-width: 1400px;
      margin: auto;
- }
+}
 
 #hero{
-     padding-top: 225px;
-     text-align: center;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     height: 90vh;
-     background-image: linear-gradient(
-         0deg, 
-         rgba(0, 0, 0, 0.5), 
-         rgba(0, 0, 0, 0.5) 
-     ) 
-     ,url("Imagenes_conitrox/36169-cumpleanos.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     
-     
-     
-
+    padding-top: 215px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5) 
+    ) 
+    ,url("Imagenes_conitrox/36169-cumpleanos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+
+@media (max-width:500px){
+    #hero{
+        padding-top: 0px ;
+        display: flex;
+    }
+}
+
+
+
 
 #hero h1{
     
@@ -68,6 +76,16 @@ button:hover{
 #cumpleaños-pro-ya .container{
      text-align: center;
      padding: 200px 12px;
+
+}
+
+
+#cumpleaños-pro-ya h2 i{
+    color: red;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding-left: 10px;
+    
+    
 }
 
  
@@ -144,12 +162,20 @@ button:hover{
         margin-top: 0px;
     }
 
+    #cumpleaños-pro-ya h2 i{
+        color: red;
+        padding-left: 10px;
+        
+        
+    }
+
     #cumpleaños-pro-ya .img-container{
-        background-image: url("Imagenes_conitrox/36169-cumpleanos.jpg");
+        background-image: url("Imagenes_conitrox/conitrox.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 400px;
+        border-radius: 30px ;
 
 
     }
@@ -304,6 +330,7 @@ li a.active, li a:hover{
 
 
 @media (max-width: 952px) {
+
     .enlace{
         padding-left: 10px;
     }
@@ -324,6 +351,7 @@ li a.active, li a:hover{
 }
 
 @media (max-width: 858px) {
+
     .checkbtn{
         display: block;
     }
@@ -452,6 +480,72 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: #E67E22;
     border-radius: 5px;
+}
+
+/* GOTOP */
+
+
+.go-top-container {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+ 
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #154360;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ 
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+ 
+.show {
+    z-index: 10;
+}
+ 
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 11;
+}
+ 
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+ 
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+    100% {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
 }
 
 
